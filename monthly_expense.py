@@ -41,13 +41,11 @@ salary_arrived()
 # write a function to add bonus to the bank balance. take the ammount from user. can you think of any edge case?
 def add_bonus():
     # your code here
-    bonus = 2000
     global bank_balance
+    bonus = int(input("Enter the bonus amount received: "))
     bank_balance += bonus
 
     print("bank balance after bonus: ", bank_balance)
-
-#diobe ´jklfhjk
 add_bonus()
 
 
