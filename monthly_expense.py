@@ -11,9 +11,9 @@ Future improvement:
 2) Once we learn file i/o or some api or database, we will replace the manual steps
 """
 
-bank_balance = 3000
+bank_balance = 6000
 salary = 3000
-salary_drawn_count = 1
+salary_drawn_count = 2
 expenses = [
     "rent",
     "food",
