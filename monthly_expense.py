@@ -27,10 +27,13 @@ expenses = [
 def salary_arrived():
     # your code here
     global bank_balance
-    if datetime.datetime.now().day ==1:
+    global salary_drawn_count
+    if datetime.datetime.now().day ==6:
         bank_balance += salary
+        salary_drawn_count+=1
 
     print("bank balance: ", bank_balance)
+
 
 salary_arrived()
 
