@@ -10,6 +10,7 @@ Future improvement:
 1) Use classes and objects. How the globle variable will be used in the class?
 2) Once we learn file i/o or some api or database, we will replace the manual steps
 """
+import datetime
 
 bank_balance = 6000
 salary = 3000
@@ -25,9 +26,11 @@ expenses = [
 # write a function to add salary to bank balance only if it's first of the month. also update salaris drawn count
 def salary_arrived():
     # your code here
+    global bank_balance
+    if datetime.datetime.now().day ==1:
+        bank_balance += salary
 
     print("bank balance: ", bank_balance)
-
 
 salary_arrived()
 
